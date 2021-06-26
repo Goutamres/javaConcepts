@@ -12,6 +12,12 @@ public class sortUsingLength {
 		
 		Arrays.sort(w,(a,b)->Integer.compare(b.length(), a.length()));
 		
+//		Arrays.sort(w,(a,b)-> b.length()-a.length());
+		
+		int[] b = {2,6,4,3,1};
+		
+		
+		
 		for(String i:w) {
 			System.out.println(i);
 		}

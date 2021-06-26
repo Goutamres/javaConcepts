@@ -1,11 +1,14 @@
 package programs;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class firstRepeatingChar {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String str = "abcdeabcde";
+		String str = "babcdeabcde";
 		
 		char s = 0 ;
 		
@@ -24,6 +27,15 @@ public class firstRepeatingChar {
 			}
 		}
 		System.out.println(s);	
+		
+		Set<Character> z = new HashSet<Character>();
+		
+		for(int i=0;i<str.length();i++) {
+			if(z.add(str.charAt(i))== false){
+				System.out.println("first repeated "+str.charAt(i));
+				break;
+			}
+		}
 		
 
 	}
